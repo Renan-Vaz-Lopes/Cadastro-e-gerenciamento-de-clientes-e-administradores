@@ -1,10 +1,10 @@
 <?php
-require_once('../db/clientServices.php');
-require_once('../Limpar.php');
 require_once('../db/conexao.php');
+require_once('../Limpar.php');
+require_once('../db/clientServices.php');
 require_once('./Cliente.php');
-require_once('../manda-email-pro-cliente.php');
 require_once('./ValidacaoFormCadastrarCliente.php');
+require_once('../manda-email-pro-cliente.php');
 
 setlocale(LC_ALL, 'pt_BR', 'pt_BR.UTF-8', 'pt_BR.UTF-8', 'portuguese');
 
@@ -13,7 +13,7 @@ $pdo = new Conexao();
 $clientServices = new ClientServices($pdo);
 $mandaEmail = new MandaEmailProCliente();
 $cliente = new Cliente($_POST);
-$validacaoFormCadastrarCliente = new ValidacaoFormCadastrarCliente($cliente,"");
+$validacaoFormCadastrarCliente = new ValidacaoFormCadastrarCliente($cliente,$POST);
 
 if (isset($_POST['btn-cadastrar-cli'])) {
     $_POST = $limparPost->limpaPostCliente($_POST);

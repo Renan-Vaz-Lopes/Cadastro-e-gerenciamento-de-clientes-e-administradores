@@ -14,6 +14,8 @@ class ValidacaoFormCadastrarCliente
     private $numero;
     private $cidade;
     private $estado;
+    private $formData;
+    private $cliente;
 
     const FIELDS_TO_CHECK_EMPTY = [
         'nome',
@@ -31,7 +33,7 @@ class ValidacaoFormCadastrarCliente
 
     public function __construct(Cliente $cliente,$formData)
     {
-        if($cliente=="") return;
+        if($cliente == "") return;
         $this->nome = $cliente->getNome();
         $this->email = $cliente->getEmail();
         $this->dataNascimento = $cliente->getDataNascimento();
@@ -43,7 +45,6 @@ class ValidacaoFormCadastrarCliente
         $this->estado = $cliente->getEstado();
         $this->cliente = $cliente;
         $this->formData = $formData;
-        // $this->validar();
         $this->verificaSeExistePOST();
     }
 

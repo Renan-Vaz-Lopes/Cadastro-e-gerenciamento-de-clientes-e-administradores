@@ -24,7 +24,6 @@ class ValidacaoFormCadastrarAdministrador
         $this->email = $administrador->getEmail();
         $this->senha =$administrador->getSenha();
         $this->confirma_senha = $administrador->getConfirmaSenha();
-        // $this->validar()
         $this->verificaSeExistePOST();
     }
 
