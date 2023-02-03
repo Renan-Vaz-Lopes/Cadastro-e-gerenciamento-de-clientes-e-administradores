@@ -1,0 +1,428 @@
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+  background: #101026;
+}
+
+.grid-item {
+  padding: 7px 3px;
+}
+
+h1{
+  text-align: center;
+  color:white;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 30px;
+  color:white;
+  font-size: 2.5rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .box1 {
+    /* width: 64%; se lembre de não colocar width quando for usar grid e box */
+    background:#1d1d2e;
+    box-shadow: rgba(0, 0, 0, 20) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, rgba(0, 0, 0, 20) 0px -3px 0px inset;
+    padding: 20px;
+  } 
+
+  .box2 {
+    padding: 20px;
+  } 
+
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+th,td{
+    padding:10px;
+    text-align:center;
+    border:1px solid #ccc;
+    color:white;
+}
+p{
+    padding:20px;
+    /* border:1px solid #ccc; */
+    text-align: center;
+}
+.oculto{
+    display:none;
+}
+
+.input-padrao {
+  outline: none;
+  border: 0;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.l {
+  color: white;
+  display: flex;
+}
+
+.l2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+    
+
+.enviar {
+    width:40%;
+    padding: 15px 0;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size:18px; 
+    border: none;
+    border-radius:5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.enviar:hover{
+  background: #f5f5f5;
+  color: #1d1d2e;;
+  border-radius: 16px;
+}
+
+.grid-container {
+    display: grid;
+    grid: auto / auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .boxflex {
+    display: flex;
+    flex-direction: column;
+  }
+  .boxquebratelefone {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxquebranumero{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxquebraresto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxquebratelefone input {
+    width: 20.9%;
+  }
+
+  .boxquebranumero input {
+    width: 43%;
+  }
+  
+  .boxquebraresto input {
+    width: 28%;
+  }
+  .item5 {
+    grid-column: 1 / span 4;
+    text-align: left;
+  }
+
+  .item8 {
+    grid-column: 3 / span 2;
+    text-align: left;
+  }
+
+  .item10 {
+    grid-column: 2 / span 3;
+    text-align: left;
+  }
+
+  .item12 {
+    grid-column: 2 / span 3;
+    text-align: left;
+  }
+
+  .btn-atualizar-cliente{
+    padding: 15px 0;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size:18px; 
+    border: none;
+    border-radius:5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .btn-atualizar-cliente:hover{
+    background: #f5f5f5;
+    color: #1d1d2e;;
+    border-radius: 16px;
+  }
+
+  .btn-deletar-cliente{
+    padding: 15px 0;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size:18px; 
+    border: none;
+    border-radius:5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .btn-deletar-cliente:hover{
+    background: #f5f5f5;
+    color: #1d1d2e;;
+    border-radius: 16px;
+  }
+
+  .btn-atualizar-adm{
+    padding: 15px 0;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size:18px; 
+    border: none;
+    border-radius:5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .btn-atualizar-adm:hover{
+    background: #f5f5f5;
+    color: #1d1d2e;;
+    border-radius: 16px;
+  }
+
+  .btn-deletar-adm{
+    padding: 15px 0;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size:18px; 
+    border: none;
+    border-radius:5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .btn-deletar-adm:hover{
+    background: #f5f5f5;
+    color: #1d1d2e;;
+    border-radius: 16px;
+  }
+
+  .form-atualiza-adm {
+    margin-top: 100px;
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .box {
+      /* width: 65%; */
+      height: 92%;
+      background:#1d1d2e;
+      }
+
+    .grid-container {
+        grid: auto / auto auto;
+    }
+      /* .grid-item {
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+      } */
+
+      .boxquebratelefone input {
+        width: 90%;
+      }
+
+      .boxquebranumero input {
+        width: 90%;
+      }
+      
+      .boxquebraresto input {
+        width: 90%;
+      }
+      
+      .l {
+        color: white;
+        text-align: center;
+      }
+    
+    .item1 {
+        grid-column: 1 / span 2;
+      }
+      
+      .item2 {
+        grid-column: 3 / span 2;
+      }
+    
+      .item3 {
+        grid-column: 1 / span 2;
+      }
+    
+      .item4 {
+        grid-column: 3 / span 2;
+      }
+      
+      .item5 {
+        grid-column: 1 / span 2;
+      }
+    
+      .item6 {
+        grid-column: 3 / span 2;
+      }
+      
+      .item7 {
+        grid-column: 1 / span 2;
+      }
+    
+      .item8 {
+        grid-column: 3 / span 2;
+        text-align: left;
+      }
+    
+      .item9 {
+        grid-column: 1 / span 2;
+      }
+      
+      .item10 {
+        grid-column: 3 / span 2;
+        text-align: left;
+      }
+    
+      .item11 {
+        grid-column: 1 / span 2;
+      }
+    
+      .item12 {
+        grid-column: 3 / span 2;
+        text-align: left;
+      }
+
+
+}
+
+@media (max-width: 768px){
+  .box {
+    /* width: 65%; */
+    height: 100%;
+    background:#1d1d2e;
+    }
+  .grid-container {
+    display: grid;
+    grid: auto / auto;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  /* .grid-item {
+    text-align: center;
+    font-size: 30px;
+  } */
+
+  .boxquebratelefone input {
+    width: 90%;
+  }
+
+  .boxquebranumero input {
+    width: 90%;
+  }
+
+  .boxquebraresto input {
+    width: 90%;
+  }
+
+  .item1 {
+    grid-column: 1 / span 4;
+    }
+  
+  .item2 {
+    grid-column: 1 / span 4;
+  }
+
+  .item3 {
+    grid-column: 1 / span 4;
+  }
+
+  .item4 {
+    grid-column: 1 / span 4;
+  }
+  
+  .item5 {
+    grid-column: 1 / span 4;
+  }
+
+  .item6 {
+    grid-column: 1 / span 4;
+  }
+  
+  .item7 {
+    grid-column: 1 / span 4;
+  }
+
+  .item8 {
+    grid-column: 1 / span 4;
+  }
+
+  .item9 {
+    grid-column: 1 / span 4;
+  }
+  
+  .item10 {
+    grid-column: 1 / span 4;
+  }
+
+  .item11 {
+    grid-column: 1 / span 4;
+  }
+
+  .item12 {
+    grid-column: 1 / span 4;
+  }
+}
+
+
+.text-danger {
+  color:red;
+}
+
+.border-danger {
+  border: 3px solid red; 
+}

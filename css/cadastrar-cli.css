@@ -1,0 +1,526 @@
+* {
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body{
+background: gray;
+
+}
+
+.grid-item {padding: 7px 3px;}
+
+h1{
+text-align: center;
+color:white;
+}
+
+h2{
+text-align: center;
+margin-bottom: 30px;
+color:white;
+font-size: 2.5rem;
+}
+
+.container {
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.box1 {
+  /* width: 64%; se lembre de nÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o colocar width quando for usar grid e box */
+  background: white;
+  /* box-shadow: rgba(0, 0, 0, 20) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, rgba(0, 0, 0, 20) 0px -3px 0px inset; */
+  /* padding: 20px 0px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  position: relative;
+  top: 2.5px;
+} 
+
+.box2 {
+  padding: 20px;
+} 
+
+table{
+  border-collapse: collapse;
+  width:100%;
+}
+th,td{
+  padding:10px;
+  text-align:center;
+  border:1px solid #ccc;
+  color:white;
+}
+
+.t {
+  padding: 20px;
+  background: #101026;
+  /* border: 1px solid #ccc; */
+  color: white;
+  width: 95.9%;
+  position: relative;
+  /* right: 1px; */
+  /* bottom: 20px; */
+  text-align: center;
+}
+
+.oculto{
+  display:none;
+}
+
+.input-padrao {
+outline: none;
+border: 0;
+padding: 10px;
+border-radius: 3px;
+border: 2.5px solid darkgray;
+}
+
+.input-padrao:focus {
+  outline: none;
+  border: 0;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2.5px solid black;
+  }
+
+.l {
+padding-bottom: 8px;
+color: black;
+font-weight: bold;
+}
+
+.l2 {
+color: white;
+display: flex;
+justify-content: center;
+padding-bottom: 10px;
+}
+  
+
+.enviar {
+  width: 23.06%;
+  padding: 12px 0;
+  color: white;
+  font-size:18px;
+  border: none;
+  border-radius:5px;
+  cursor: pointer;
+  background: #101026;
+}
+
+.grid-container {
+  display: grid;
+  grid: auto / auto auto auto auto;
+  gap: 10px;
+  padding: 10px 10px 0 10px;
+}
+
+.boxflex {
+  display: flex;
+  flex-direction: column;
+}
+.boxquebratelefone {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxquebranumero{
+  display: flex;
+  flex-direction: column;
+}
+
+.boxquebraresto {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxquebratelefone input {
+  width: 20.9%;
+}
+
+.boxquebratelefone label {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.boxquebranumero label {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.boxquebraresto label {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.boxquebranumero input {
+  width: 43%;
+}
+
+.boxquebraresto input {
+  width: 28%;
+}
+.item5 {
+  grid-column: 1 / span 4;
+  text-align: left;
+}
+
+.item6 {
+  grid-column: 1 / span 4;
+  text-align: left;
+}
+
+.item9 {
+  grid-column: 3 / span 2;
+  text-align: left;
+}
+
+.item11 {
+  grid-column: 2 / span 3;
+  text-align: left;
+}
+
+.item13 {
+  grid-column: 2 / span 3;
+  text-align: left;
+}
+
+
+.btn-atualizar-cliente{
+  padding: 15px 0;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size:18px; 
+  border: none;
+  border-radius:5px;
+  transition: 1s all;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.btn-atualizar-cliente:hover{
+  background: #f5f5f5;
+  color: #1d1d2e;;
+  border-radius: 16px;
+}
+
+.btn-deletar-cliente{
+  padding: 15px 0;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size:18px; 
+  border: none;
+  border-radius:5px;
+  transition: 1s all;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.btn-deletar-cliente:hover{
+  background: #f5f5f5;
+  color: #1d1d2e;;
+  border-radius: 16px;
+}
+
+.btn-atualizar-adm{
+  padding: 15px 0;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size:18px; 
+  border: none;
+  border-radius:5px;
+  transition: 1s all;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.btn-atualizar-adm:hover{
+  background: #f5f5f5;
+  color: #1d1d2e;;
+  border-radius: 16px;
+}
+
+.btn-deletar-adm{
+  padding: 15px 0;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size:18px; 
+  border: none;
+  border-radius:5px;
+  transition: 1s all;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.btn-deletar-adm:hover{
+  background: #f5f5f5;
+  color: #1d1d2e;;
+  border-radius: 16px;
+}
+
+.form-atualiza-adm {
+  margin-top: 100px;
+}
+
+.m {
+  margin-left: -5px;
+}
+
+.c {
+  background: #d9d4d4;
+}
+
+#voltar_cadastrar_cliente {
+  margin-left: 0.3%;
+}
+
+#enviar_cadastrar_cliente {
+  margin-bottom: 5px;
+  margin-left: 52.84%;
+  margin-top: 5px;
+}
+
+.message {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .t {
+    padding: 20px;
+    background: #101026;
+    color: white;
+    width: 92%;
+    position: relative;
+
+  }
+
+  .box {
+
+    height: 92%;
+    background:#1d1d2e;
+    }
+
+  .grid-container {
+      grid: auto / auto auto;
+  }
+
+    .boxquebratelefone input {
+      width: 90%;
+    }
+
+    .boxquebranumero input {
+      width: 89%;
+    }
+    
+    .boxquebraresto input {
+      width: 89%;
+    }
+
+  
+  .item1 {
+      grid-column: 1 / span 2;
+    }
+    
+    .item2 {
+      grid-column: 3 / span 2;
+    }
+  
+    .item3 {
+      grid-column: 1 / span 2;
+    }
+  
+    .item4 {
+      grid-column: 3 / span 2;
+    }
+    
+    .item5 {
+      grid-column: 1 / span 4;
+      width: 47%;
+    }
+  
+    .item6 {
+      grid-column: 1 / span 4;
+      text-align: center;
+    }
+    
+    .item7 {
+      grid-column: 1 / span 2;
+    }
+  
+    .item8 {
+      grid-column: 3 / span 2;
+      text-align: left;
+    }
+  
+    .item9 {
+      grid-column: 1 / span 2;
+    }
+    
+    .item10 {
+      grid-column: 3 / span 2;
+      text-align: left;
+    }
+  
+    .item11 {
+      grid-column: 1 / span 2;
+    }
+  
+    .item12 {
+      grid-column: 3 / span 2;
+      text-align: left;
+    }
+
+    .item13 {
+      grid-column: 1 / span 2;
+      text-align: left;
+    }
+
+    #voltar_cadastrar_cliente {
+      margin-bottom: 5px;
+      margin-left: 0.55%;
+      margin-top: 5px;
+    }
+
+    #enviar_cadastrar_cliente {
+      margin-bottom: 5px;
+      margin-left: 51.89%;
+      margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+  .m {
+    position: relative;
+    left: 5px;
+  }
+
+  .t {
+    padding: 19px;
+    background: #101026;
+    color: white;
+    width: 89.1%;
+    position: relative;
+  }
+
+.box {
+  height: 100%;
+  background:#1d1d2e;
+  }
+.grid-container {
+  display: grid;
+  grid: auto / auto;
+  padding: 10px;
+  justify-content: center;
+}
+
+.boxquebratelefone input {
+  width: 89%;
+}
+
+.boxquebranumero input {
+  width: 89%;
+}
+
+.boxquebraresto input {
+  width: 88.5%;
+}
+
+.item1 {
+  grid-column: 1 / span 4;
+  }
+
+.item2 {
+  grid-column: 1 / span 4;
+}
+
+.item3 {
+  grid-column: 1 / span 4;
+}
+
+.item4 {
+  grid-column: 1 / span 4;
+}
+
+.item5 {
+  grid-column: 1 / span 4;
+}
+
+.item6 {
+  grid-column: 1 / span 4;
+  text-align: center;
+}
+
+.item7 {
+  grid-column: 1 / span 4;
+}
+
+.item8 {
+  grid-column: 1 / span 4;
+}
+
+.item9 {
+  grid-column: 1 / span 4;
+}
+
+.item10 {
+  grid-column: 1 / span 4;
+}
+
+.item11 {
+  grid-column: 1 / span 4;
+}
+
+.item12 {
+  grid-column: 1 / span 4;
+}
+
+.item13 {
+  grid-column: 1 / span 4;
+}
+
+#voltar_cadastrar_cliente {
+  margin-bottom: 5px;
+  margin-left: 0.6%;
+  margin-top: 5px;
+}
+
+#enviar_cadastrar_cliente {
+  margin-bottom: 5px;
+  margin-left: 51.5%;
+  margin-top: 5px;
+}
+
+}
+
+.text-danger {
+color:red;
+}
+
+.border-danger {
+border: 3px solid red; 
+}
