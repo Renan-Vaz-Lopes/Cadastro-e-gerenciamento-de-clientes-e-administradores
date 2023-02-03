@@ -13,7 +13,7 @@ $pdo = new Conexao();
 $clientServices = new ClientServices($pdo);
 $mandaEmail = new MandaEmailProCliente();
 $cliente = new Cliente($_POST);
-$validacaoFormCadastrarCliente = new ValidacaoFormCadastrarCliente($cliente,$POST);
+$validacaoFormCadastrarCliente = new ValidacaoFormCadastrarCliente($cliente,$_POST);
 
 if (isset($_POST['btn-cadastrar-cli'])) {
     $_POST = $limparPost->limpaPostCliente($_POST);
