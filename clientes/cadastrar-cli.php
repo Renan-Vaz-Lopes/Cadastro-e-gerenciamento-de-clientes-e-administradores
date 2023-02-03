@@ -11,9 +11,9 @@ setlocale(LC_ALL, 'pt_BR', 'pt_BR.UTF-8', 'pt_BR.UTF-8', 'portuguese');
 $limparPost = new Limpar();
 $pdo = new Conexao();
 $clientServices = new ClientServices($pdo);
-$mandaEmail = new MandaEmailProCliente();
 $cliente = new Cliente($_POST);
 $validacaoFormCadastrarCliente = new ValidacaoFormCadastrarCliente($cliente,$_POST);
+$mandaEmail = new MandaEmailProCliente();
 
 if (isset($_POST['btn-cadastrar-cli'])) {
     $_POST = $limparPost->limpaPostCliente($_POST);

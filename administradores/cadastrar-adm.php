@@ -18,7 +18,7 @@ if (isset($_POST['btn-cadastrar-adm'])) {
     $_POST = $limparPost->limpaPostCadastraAdm($_POST);
     $administrador = new Administrador($_POST);
     $validacaoFormCadastrarAdministrador = new ValidacaoFormCadastrarAdministrador($administrador);
-    if (empty($validacaoFormAdministrador->getMessage())) {
+    if (empty($validacaoFormCadastrarAdministrador->getMessage())) {
         $admServices->insertAdm($_POST);
     } else {
         $administrador = new Administrador($_POST);

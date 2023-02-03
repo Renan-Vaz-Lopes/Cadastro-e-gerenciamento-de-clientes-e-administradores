@@ -50,7 +50,7 @@ class ValidacaoFormCadastrarCliente
 
     private function verificaSeExistePOST()
     {
-        if(isset($_POST['btn-atualizar-adm'])) $this->validar();
+        if(isset($_POST['btn-cadastrar-cli'])) $this->validar();
     }
 
     private function validar()
